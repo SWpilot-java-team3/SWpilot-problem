@@ -8,7 +8,7 @@ public class HelloBiodome01 {
 		if(args.length<1) {
 			System.out.println("재입력 하세요!");
 			System.exit(1);
-			// test
+			// test1
 		}
 		
 		String name = args[0];
