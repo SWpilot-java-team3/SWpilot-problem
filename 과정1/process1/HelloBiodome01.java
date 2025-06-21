@@ -15,6 +15,6 @@ public class HelloBiodome01 {
 		
 		System.out.println("어서오세요 "+ name +" 님!");
 		System.out.println("좋은 아침입니다");
-		
+
 	}
 }

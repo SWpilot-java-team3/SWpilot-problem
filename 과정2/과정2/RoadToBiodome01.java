@@ -1,5 +1,3 @@
-package 과정2.과정2;
-
 public class RoadToBiodome01 {
 	public static void main(String[] args)
 	{
