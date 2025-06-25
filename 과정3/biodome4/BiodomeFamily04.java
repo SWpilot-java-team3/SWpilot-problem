@@ -1,4 +1,4 @@
-package biodome4;
+package 과정3.biodome4;
 
 public class BiodomeFamily04 {
 	public static void main(String[ ]args)

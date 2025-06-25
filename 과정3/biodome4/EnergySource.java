@@ -1,4 +1,4 @@
-package biodome4;
+package 과정3.biodome4;
 
 abstract class EnergySource {
 	final String sourceName;

@@ -1,4 +1,4 @@
-package biodome5;
+package 과정3.biodome5;
 
 abstract class AncientArtifact {
 	final String name;
