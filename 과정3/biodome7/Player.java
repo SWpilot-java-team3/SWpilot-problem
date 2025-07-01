@@ -5,13 +5,14 @@ public class Player {
     int volume;
     boolean isPlaying;
 
-    public Player(Song song) {
-        this.song = song;
+    public Player() {
         this.volume = 1;
         this.isPlaying = false;
     }
 
-    public void play() {
+    public void play(Song song) {
+        this.song = song;
+
         if(isPlaying) {
             stop();
         }
@@ -20,11 +21,11 @@ public class Player {
             setVolume(5);
         }
 
-        System.out.printf("%s, %d분, %s, \n", song.title, song.duration, song.artist);
+        System.out.printf("%s, %d분, %s, ", song.title, song.duration, song.artist);
         if(song instanceof AnimalSong){
-            System.out.println(((AnimalSong)song).animal);
+            System.out.println(((AnimalSong)song).animal + " 재생합니다.");
         }else if(song instanceof ManagerSong) {
-            System.out.println(((ManagerSong) song).genre);
+            System.out.println(((ManagerSong) song).genre + " 재생합니다.");
         }
 
         isPlaying = true;
@@ -36,6 +37,7 @@ public class Player {
 
     public void setVolume(int volume) {
         this.volume = volume;
+        System.out.println("볼륨을 "+ volume + " 으로 설정합니다");
     }
 
 }

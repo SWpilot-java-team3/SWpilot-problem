@@ -60,5 +60,24 @@ public class MusicLibrary {
     }
 
 
+    public Song searchMusic(String line){
+
+        for(Song song:songList){
+            if(song.title.equals(line)){
+                return song;
+            }
+        }
+
+        for(Song song:songList){
+            if(song instanceof AnimalSong && ((AnimalSong) song).animal.equals(line)){
+                return song;
+            }else if(song instanceof ManagerSong && ((ManagerSong) song).genre.equals(line)){
+                return song;
+            }
+        }
+        return null;
+    }
+
+
 
 }

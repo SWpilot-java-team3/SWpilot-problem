@@ -16,5 +16,15 @@ public class BiodomeFamily07{
         musicLibrary.addSong(song5);
 
         musicLibrary.printManagerSongList();
+
+        Player player = new Player();
+        player.play(song4);
+        player.setVolume(50);
+
+        Song song = musicLibrary.searchMusic("당나귀");
+        if(song!=null){
+            player.play(song);
+        }
+
     }
 }
